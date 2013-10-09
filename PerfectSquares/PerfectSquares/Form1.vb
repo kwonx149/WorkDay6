@@ -2,8 +2,22 @@
 
     Private Sub btnDisplay_Click(sender As System.Object, e As System.EventArgs) Handles btnDisplay.Click
 
+
         lstResult.Items.Clear()
-        lstResult.Items.Add("Not implemented yet")
+
+
+        Dim i As Integer
+
+        i = 1
+        Do While (i <= 10)
+            lstResult.Items.Add("Number is " & i ^ 2)
+            i = i + 1
+        Loop
+
+
+    End Sub
+
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
 End Class
